@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9ECFF;
+    padding: 0 40px;
+    min-height: 81px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.circles {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.half-circle, .full-circle {
+background-color: black;
+}
+.small {
+    width: 7.5px;
+    height: 15px;
+    border-radius: 10px 0 0 10px;
+}
+.medium {
+    width: 10px;
+    height: 20px;
+    border-radius: 20px 0 0 20px;
+}
+.full-circle.large {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 5px;
+    color: black;
+    font-family: Instrument Sans, sans-serif;
+    margin-left: -15px;
+}
+.nav-item {
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Geist Mono, monospace;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.btn-reserve {
+    background-color:#808CFD;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Geist Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+.btn-reserve:hover {
+    background-color: #5A6EDF;
+    cursor: pointer;
+}
+
+/*main page 1*/
+.main-title-area {
+    padding: 10px 0;
+    margin: 0;
+    background-color: white;
+}
+
+.main-title {
+    font-family: 'Anek Tamil';
+    font-size: 174px; 
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -10px; 
+    color: #000000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    padding: 5px 2.5%;
+}
+
+.blue-text {
+    color: #808DFD; 
+    font-weight: 900;
+}
+
+.hero-row {
+    display: flex; 
+    width: 100%;
+    min-height: 450px; 
+    border-top: 1px solid #000; 
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: relative;
+    flex: 0 0 66.7%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.hero-content {
+    flex: 0 0 33.3%;
+    background-color: #E9ECFF; 
+    padding: 60px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.section-title {
+    font-family: 'Anek Tamil';
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 300px; 
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.description {
+    font-family: 'Geist';
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.about-link {
+    font-family: 'Geist Mono';
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: auto; 
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 100%;
+    border-bottom: 1px solid #000; 
+}
+
+.feature-item {
+    padding: 30px 40px 60px 40px; 
+    display: flex;
+    flex-direction: column;
+    min-height: 450px; 
+}
+
+.feature-title {
+    font-family: 'Anek Tamil';
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 400px;
+}
+
+.feature-text {
+    font-family: 'Geist';
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    margin-top: 20px; 
+}
+
+.bg-light-blue {
+    background-color: #E9ECFF; 
+}
+
+.border-right {
+    border-right: 1px solid #000;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.discovery-area {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+.discovery-content {
+    flex: 0 0 33.3%;
+    background-color: #E9ECFF;
+    padding: 40px 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid #000;
+}
+
+.discovery-content .section-title {
+    margin-bottom: 50px; 
+}
+
+.discovery-image {
+    flex: 0 0 66.7%;
+}
+
+.discovery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%); 
+}
+
+.info-block {
+    padding: 40px 40px; 
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.discovery-content .section-title,
+.view-link {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.info-block:last-of-type {
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.info-title {
+    font-family: 'Anek Tamil';
+    font-size: 55px;
+    letter-spacing: -1px;
+    line-height: 0.9;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.info-text {
+    font-family: 'Geist';
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 250px; 
+}
+
+.view-link {
+    margin-top: auto;
+    padding-top: 40px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Geist Mono', monospace;
+    }
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.feature-item {
+    border-right: 2px solid #000;
+}
+
+.tribe-section {
+    background-color: #808CFD; 
+    padding: 120px 0px;       
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.tribe-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tribe-sub {
+    font-family: 'Geist Mono';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.tribe-title {
+    font-family: 'Anek Tamil';
+    font-size: 56px;      
+    line-height: 0.9;     
+    letter-spacing: -3px; 
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.btn-reserve1 {
+
+    background-color: #E9ECFF;
+    border-radius: 8px;
+    padding: 12px 24px;
+    display: inline-block;
+    transition: 0.3s;
+    margin-left: 410px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Geist Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #E9ECFF;
+}
+.footer-top {
+    display: flex;
+    width: 100%;
+    padding: 40px; 
+    box-sizing: border-box;
+    justify-content: space-between; 
+}
+
+.f-circles {
+    display: flex;
+    align-items: center;
+    gap: -1; 
+    padding: 30px;
+    flex-shrink: 0;
+}
+
+
+.f-half-small, .f-half-medium, .f-full-large {
+    background-color: black;
+}
+
+
+.f-half-small {
+    width: 35px;
+    height: 70px;
+    border-radius: 70px 0 0 70px;
+}
+
+
+.f-half-medium {
+    width: 55px;
+    height: 110px;
+    border-radius: 110px 0 0 110px;
+}
+
+
+.f-full-large {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: 2px; 
+}
+
+.footer-brand-name {
+    font-family: 'Anek Tamil';
+    font-size: 55px; 
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer-label {
+    font-family: 'Anek Tamil';
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.footer-col p, .hours-row span {
+    font-family: 'Anek Tamil';
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.hours-row {
+    display: flex;
+    width: 280px; 
+    justify-content: space-between; 
+    margin-bottom: 5px;
+}
+
+.footer-col {
+    flex: 1; 
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.social-links {
+    color: #000;
+    font-family: 'Anek Tamil';
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.footer-col {
+    flex: 0 1 auto; 
+}
+
+.footer-col:nth-child(2) {
+    text-align: left;
+}
+
+.footer-col:nth-child(3) {
+    text-align: right;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col a, 
+.footer-col p, 
+.footer-col span,
+.footer-label {
+    color: #000000 !important; 
+}
+
+/* --- ADAPTIVE DESIGN --- */
+
+
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 100px; 
+        letter-spacing: -5px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .feature-item:nth-child(2) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .main-header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-reserve {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 50px; 
+        letter-spacing: -2px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .hero-row, .discovery-area {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-image, .hero-content, 
+    .discovery-content, .discovery-image {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .hero-content, .discovery-content {
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 40px;
+        margin-bottom: 30px !important; 
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-item {
+        border-right: none;
+        border-bottom: 1px solid #000;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .feature-title {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .tribe-section {
+        padding: 60px 20px;
+    }
+
+    .tribe-title {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .btn-reserve1 {
+        margin-left: 0; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .f-circles {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer-col {
+        text-align: left !important;
+    }
+
+    .hours-row {
+        width: 100%;
+    }
+
+    .footer-brand-name {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 42px;
+    }
+    
+    .info-title {
+        font-size: 35px;
+    }
+}
